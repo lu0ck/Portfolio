@@ -130,9 +130,32 @@ const translations = {
     crimsonDetailsTechIA: "IA: Google Gemini API, Serper.dev, Tavily",
     crimsonDetailsTechNotifications: "Notifications: Nodemailer, Discord/Telegram Webhooks",
     crimsonDetailsPitch: "Developed an automated price tracker with Iron Man HUD-style interface. Uses Google Gemini AI to extract product data and analyze market trends, with real-time notifications via Discord/Telegram/Email. Stack: React + Node.js + Tailwind + AI.",
-    descCrimson: "Automated price tracker with Iron Man HUD interface"
-  },
-  pt: {
+    descCrimson: "Automated price tracker with Iron Man HUD interface",
+    oficinaDetailsTitle: "OFICINA_MOTOS - Motorcycle Workshop Management",
+    oficinaDetailsSubtitle: "React TypeScript Vite Tailwind Supabase",
+    oficinaDetailsIntro: "Complete management and control system focused on motorcycle repair shops.",
+    oficinaDetailsAboutTitle: "📱 About the Project",
+    oficinaDetailsAboutDesc: "A comprehensive management system for motorcycle repair shops. Controls customers, vehicles, services, parts inventory, financial transactions, and more. Modern interface with real-time updates.",
+    oficinaDetailsFeaturesTitle: "✨ Main Features",
+    oficinaDetailsFeatures: [
+      "Customer registration and management",
+      "Vehicle tracking by customer",
+      "Service orders and OS creation",
+      "Parts and inventory control",
+      "Financial transactions (income/expenses)",
+      "Service history per vehicle",
+      "Dashboard with statistics",
+      "Real-time updates with Supabase",
+      "Dark mode theme",
+      "Mobile-friendly design"
+    ],
+    oficinaDetailsTechTitle: "🛠️ Technologies",
+    oficinaDetailsTechFrontend: "Frontend: React 19, TypeScript, Vite, Tailwind CSS, Motion, Lucide React",
+    oficinaDetailsTechBackend: "Backend: Supabase (PostgreSQL), Auth, Realtime",
+    oficinaDetailsFutureTitle: "Future (Expansion)",
+    oficinaDetailsFuture: "Mobile App (Capacitor), Desktop App (Tauri), WhatsApp Integration",
+    oficinaDetailsPitch: "Developed a complete management system for motorcycle repair shops with React and Supabase. Controls customers, vehicles, services, inventory and finances. Stack: React + TypeScript + Tailwind + Supabase.",
+    anotaDetailsTitle: "Anotaaqui - Personal Financial Management",
     navLogo: "Lucas Engenheiro de Software",
     navAbout: "Sobre", navProj: "Projetos", navContact: "Contato",
     heroSubtitle: "Desenvolvedor Full Stack",
@@ -215,7 +238,31 @@ const translations = {
     crimsonDetailsTechIA: "IA: Google Gemini API, Serper.dev, Tavily",
     crimsonDetailsTechNotifications: "Notificações: Nodemailer, Webhooks Discord/Telegram",
     crimsonDetailsPitch: "Desenvolvi um rastreador de preços automatizado com interface estilo Iron Man HUD. Utiliza Google Gemini AI para extrair dados de produtos e analisar tendências de mercado, com notificações em tempo real via Discord/Telegram/Email. Stack: React + Node.js + Tailwind + IA.",
-    descCrimson: "Rastreador de preços automatizado com interface HUD Iron Man"
+    descCrimson: "Rastreador de preços automatizado com interface HUD Iron Man",
+    oficinaDetailsTitle: "OFICINA_MOTOS - Sistema de Gestão para Oficina de Motos",
+    oficinaDetailsSubtitle: "React TypeScript Vite Tailwind Supabase",
+    oficinaDetailsIntro: "Sistema completo de gerenciamento e controle focado para oficina de motos.",
+    oficinaDetailsAboutTitle: "📱 Sobre o Projeto",
+    oficinaDetailsAboutDesc: "Um sistema abrangente de gestão para oficinas de motos. Controla clientes, veículos, serviços, estoque de peças, transações financeiras e muito mais. Interface moderna com atualizações em tempo real.",
+    oficinaDetailsFeaturesTitle: "✨ Funcionalidades Principais",
+    oficinaDetailsFeatures: [
+      "Cadastro e gerenciamento de clientes",
+      "Controle de veículos por cliente",
+      "Ordens de serviço e criação de OS",
+      "Controle de peças e estoque",
+      "Transações financeiras (receitas/despesas)",
+      "Histórico de serviços por veículo",
+      "Dashboard com estatísticas",
+      "Atualizações em tempo real com Supabase",
+      "Tema dark mode",
+      "Design responsivo para mobile"
+    ],
+    oficinaDetailsTechTitle: "🛠️ Tecnologias",
+    oficinaDetailsTechFrontend: "Frontend: React 19, TypeScript, Vite, Tailwind CSS, Motion, Lucide React",
+    oficinaDetailsTechBackend: "Backend: Supabase (PostgreSQL), Auth, Realtime",
+    oficinaDetailsFutureTitle: "Futuro (Expansão)",
+    oficinaDetailsFuture: "App Mobile (Capacitor), App Desktop (Tauri), Integração WhatsApp",
+    oficinaDetailsPitch: "Desenvolvi um sistema completo de gestão para oficinas de motos com React e Supabase. Controla clientes, veículos, serviços, estoque e finanças. Stack: React + TypeScript + Tailwind + Supabase."
   },
   es: {
     navLogo: "Lucas Ingeniero de Software",
@@ -300,7 +347,31 @@ const translations = {
     crimsonDetailsTechIA: "IA: Google Gemini API, Serper.dev, Tavily",
     crimsonDetailsTechNotifications: "Notificaciones: Nodemailer, Webhooks Discord/Telegram",
     crimsonDetailsPitch: "Desarrollé un rastreador de precios automatizado con interfaz estilo Iron Man HUD. Utiliza Google Gemini AI para extraer datos de productos y analizar tendencias de mercado, con notificaciones en tiempo real vía Discord/Telegram/Email. Stack: React + Node.js + Tailwind + IA.",
-    descCrimson: "Rastreador de precios automatizado con interfaz HUD Iron Man"
+    descCrimson: "Rastreador de precios automatizado con interfaz HUD Iron Man",
+    oficinaDetailsTitle: "OFICINA_MOTOS - Sistema de Gestión para Taller de Motos",
+    oficinaDetailsSubtitle: "React TypeScript Vite Tailwind Supabase",
+    oficinaDetailsIntro: "Sistema completo de gestión y control enfocado a talleres de motos.",
+    oficinaDetailsAboutTitle: "📱 Sobre el Proyecto",
+    oficinaDetailsAboutDesc: "Un sistema integral de gestión para talleres de motos. Controla clientes, vehículos, servicios, inventario de repuestos, transacciones financieras y más. Interfaz moderna con actualizaciones en tiempo real.",
+    oficinaDetailsFeaturesTitle: "✨ Funcionalidades Principales",
+    oficinaDetailsFeatures: [
+      "Registro y gestión de clientes",
+      "Control de vehículos por cliente",
+      "Órdenes de servicio y creación de OS",
+      "Control de piezas e inventario",
+      "Transacciones financieras (ingresos/gastos)",
+      "Historial de servicios por vehículo",
+      "Dashboard con estadísticas",
+      "Actualizaciones en tiempo real con Supabase",
+      "Tema dark mode",
+      "Diseño responsive para móvil"
+    ],
+    oficinaDetailsTechTitle: "🛠️ Tecnologías",
+    oficinaDetailsTechFrontend: "Frontend: React 19, TypeScript, Vite, Tailwind CSS, Motion, Lucide React",
+    oficinaDetailsTechBackend: "Backend: Supabase (PostgreSQL), Auth, Realtime",
+    oficinaDetailsFutureTitle: "Futuro (Expansión)",
+    oficinaDetailsFuture: "App Mobile (Capacitor), App Desktop (Tauri), Integración WhatsApp",
+    oficinaDetailsPitch: "Desarrollé un sistema completo de gestión para talleres de motos con React y Supabase. Controla clientes, vehículos, servicios, inventario y finanzas. Stack: React + TypeScript + Tailwind + Supabase."
   }
 };
 
@@ -325,11 +396,31 @@ export default function App() {
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [crimsonSlideIndex, setCrimsonSlideIndex] = useState(0);
+  const [anotaaquiSlideIndex, setAnotaaquiSlideIndex] = useState(0);
+  const [oficinaSlideIndex, setOficinaSlideIndex] = useState(0);
 
   useEffect(() => {
     if (selectedProject === 'CRIMSON_SENTINEL') {
       const interval = setInterval(() => {
         setCrimsonSlideIndex(prev => (prev + 1) % 4);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [selectedProject]);
+
+  useEffect(() => {
+    if (selectedProject === 'anotaaqui') {
+      const interval = setInterval(() => {
+        setAnotaaquiSlideIndex(prev => (prev + 1) % 4);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [selectedProject]);
+
+  useEffect(() => {
+    if (selectedProject === 'OFICINA_MOTOS') {
+      const interval = setInterval(() => {
+        setOficinaSlideIndex(prev => (prev + 1) % 4);
       }, 3000);
       return () => clearInterval(interval);
     }
@@ -356,7 +447,7 @@ export default function App() {
           bio: user.bio || t.heroDesc
         });
 
-        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina', 'portfolio', 'discord'];
+        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina', 'oficina_motos', 'portfolio', 'discord', 'anotaaqui'];
         const filteredRepos = allRepos.filter((repo: Repo) => {
           if (repo.fork) return false;
           const nameLower = repo.name.toLowerCase();
@@ -377,13 +468,14 @@ export default function App() {
   const displayRepos = useMemo(() => {
     const privateRepos: Repo[] = [
       {
-        name: 'FZ15 Oficina',
+        name: 'OFICINA_MOTOS',
         description: null,
         descriptionKey: 'descOficina',
         languageKey: 'statusInProgress',
         isPrivate: true,
-        imageUrl: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800', 
-        html_url: '#',
+        hasDetails: true,
+        imageUrl: '/oficina_motos/tela.png', 
+        html_url: 'https://github.com/lu0ck/OFICINA_MOTOS',
         fork: false,
         updated_at: ''
       },
@@ -395,7 +487,7 @@ export default function App() {
         isSiteLink: true,
         hasDetails: true,
         html_url: 'https://anotaaqui.online/',
-        imageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=800', 
+        imageUrl: '/anotaaqui/tela.png', 
         fork: false,
         updated_at: ''
       },
@@ -1015,6 +1107,296 @@ export default function App() {
                 <div className="mt-12 flex flex-wrap gap-4">
                   <a 
                     href="https://github.com/lu0ck/CRIMSON_SENTINEL" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-red-500 text-white rounded-lg font-bold transition-all hover:bg-red-600 hover:-translate-y-1 shadow-lg shadow-red-500/20"
+                  >
+                    <Github size={20} /> GitHub
+                  </a>
+                  <button 
+                    onClick={() => setSelectedProject(null)}
+                    className={`inline-flex items-center gap-2 px-8 py-3 bg-transparent border ${theme === 'dark' ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-900' : 'border-zinc-200 text-zinc-600 hover:bg-zinc-50'} rounded-lg font-bold transition-all`}
+                  >
+                    {t.btnClose}
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Anotaaqui Modal */}
+      <AnimatePresence>
+        {selectedProject === 'anotaaqui' && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[2000] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm"
+            onClick={() => setSelectedProject(null)}
+          >
+            <motion.div 
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className={`w-full max-w-5xl max-h-[90vh] overflow-y-auto ${theme === 'dark' ? 'bg-zinc-950 border-zinc-800' : 'bg-white border-zinc-200'} border rounded-2xl shadow-2xl relative`}
+            >
+              <button 
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-4 right-4 p-2 rounded-full hover:bg-red-500/10 text-zinc-400 hover:text-red-500 transition-all z-10"
+              >
+                <ChevronDown className="rotate-180" size={24} />
+              </button>
+
+              {/* Media Gallery */}
+              <div className="relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`anota1-${anotaaquiSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/anotaaqui/${anotaaquiSlideIndex === 0 ? 'dash' : anotaaquiSlideIndex === 1 ? 'login' : anotaaquiSlideIndex === 2 ? 'list' : 'config'}.png`}
+                      alt="Slide 1"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`anota2-${anotaaquiSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/anotaaqui/${anotaaquiSlideIndex === 0 ? 'login' : anotaaquiSlideIndex === 1 ? 'list' : anotaaquiSlideIndex === 2 ? 'config' : 'dash'}.png`}
+                      alt="Slide 2"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
+                  <iframe 
+                    id="anota-video"
+                    className="w-full h-full rounded-lg"
+                    src=""
+                    title="Anotaaqui Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              <div className="p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.anotaDetailsTitle}</h2>
+                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>{t.anotaDetailsSubtitle}</p>
+                
+                <p className={`text-lg ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'} mb-8 leading-relaxed`}>
+                  {t.anotaDetailsIntro}
+                </p>
+
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                      {t.anotaDetailsAboutTitle}
+                    </h3>
+                    <p className={`${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} leading-relaxed`}>
+                      {t.anotaDetailsAboutDesc}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      {t.anotaDetailsFeaturesTitle}
+                    </h3>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+                      {t.anotaDetailsFeatures.map((feature: string, idx: number) => (
+                        <li key={idx} className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} flex items-start gap-2`}>
+                          <span className="text-red-500 mt-1">•</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                        {t.anotaDetailsTechTitle}
+                      </h3>
+                      <div className="space-y-2">
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          <span className="font-bold text-red-500/80">Frontend:</span> {t.anotaDetailsTechFrontend.split(': ')[1]}
+                        </p>
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          <span className="font-bold text-red-500/80">Backend:</span> {t.anotaDetailsTechBackend.split(': ')[1]}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold mb-3">
+                        {t.anotaDetailsFutureTitle}
+                      </h3>
+                      <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                        {t.anotaDetailsFuture}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-12 flex flex-wrap gap-4">
+                  <a 
+                    href="https://anotaaqui.online/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-red-500 text-white rounded-lg font-bold transition-all hover:bg-red-600 hover:-translate-y-1 shadow-lg shadow-red-500/20"
+                  >
+                    <ExternalLink size={20} /> {t.btnVisitSite}
+                  </a>
+                  <button 
+                    onClick={() => setSelectedProject(null)}
+                    className={`inline-flex items-center gap-2 px-8 py-3 bg-transparent border ${theme === 'dark' ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-900' : 'border-zinc-200 text-zinc-600 hover:bg-zinc-50'} rounded-lg font-bold transition-all`}
+                  >
+                    {t.btnClose}
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* OFICINA_MOTOS Modal */}
+      <AnimatePresence>
+        {selectedProject === 'OFICINA_MOTOS' && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[2000] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm"
+            onClick={() => setSelectedProject(null)}
+          >
+            <motion.div 
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className={`w-full max-w-5xl max-h-[90vh] overflow-y-auto ${theme === 'dark' ? 'bg-zinc-950 border-zinc-800' : 'bg-white border-zinc-200'} border rounded-2xl shadow-2xl relative`}
+            >
+              <button 
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-4 right-4 p-2 rounded-full hover:bg-red-500/10 text-zinc-400 hover:text-red-500 transition-all z-10"
+              >
+                <ChevronDown className="rotate-180" size={24} />
+              </button>
+
+              {/* Media Gallery */}
+              <div className="relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`oficina1-${oficinaSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/oficina_motos/${oficinaSlideIndex === 0 ? 'dash' : oficinaSlideIndex === 1 ? 'login' : oficinaSlideIndex === 2 ? 'list' : 'config'}.png`}
+                      alt="Slide 1"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`oficina2-${oficinaSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/oficina_motos/${oficinaSlideIndex === 0 ? 'login' : oficinaSlideIndex === 1 ? 'list' : oficinaSlideIndex === 2 ? 'config' : 'dash'}.png`}
+                      alt="Slide 2"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
+                  <iframe 
+                    id="oficina-video"
+                    className="w-full h-full rounded-lg"
+                    src=""
+                    title="OFICINA_MOTOS Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              <div className="p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.oficinaDetailsTitle}</h2>
+                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>{t.oficinaDetailsSubtitle}</p>
+                
+                <p className={`text-lg ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'} mb-8 leading-relaxed`}>
+                  {t.oficinaDetailsIntro}
+                </p>
+
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                      {t.oficinaDetailsAboutTitle}
+                    </h3>
+                    <p className={`${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} leading-relaxed`}>
+                      {t.oficinaDetailsAboutDesc}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      {t.oficinaDetailsFeaturesTitle}
+                    </h3>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+                      {t.oficinaDetailsFeatures.map((feature: string, idx: number) => (
+                        <li key={idx} className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} flex items-start gap-2`}>
+                          <span className="text-red-500 mt-1">•</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                        {t.oficinaDetailsTechTitle}
+                      </h3>
+                      <div className="space-y-2">
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          <span className="font-bold text-red-500/80">Frontend:</span> {t.oficinaDetailsTechFrontend}
+                        </p>
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          <span className="font-bold text-red-500/80">Backend:</span> {t.oficinaDetailsTechBackend}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold mb-3">
+                        {t.oficinaDetailsFutureTitle}
+                      </h3>
+                      <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                        {t.oficinaDetailsFuture}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={`p-4 ${theme === 'dark' ? 'bg-red-500/10 border-red-500/20' : 'bg-red-50 border-red-100'} border rounded-lg`}>
+                    <p className={`text-sm italic ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'}`}>
+                      <span className="font-bold text-red-500">Pitch:</span> "{t.oficinaDetailsPitch}"
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-12 flex flex-wrap gap-4">
+                  <a 
+                    href="https://github.com/lu0ck/OFICINA_MOTOS" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3 bg-red-500 text-white rounded-lg font-bold transition-all hover:bg-red-600 hover:-translate-y-1 shadow-lg shadow-red-500/20"
