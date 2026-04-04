@@ -19,6 +19,7 @@ import {
   Moon
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import MatrixRain from './components/MatrixRain';
 
 // --- Types ---
 type Language = 'en' | 'pt' | 'es';
@@ -415,13 +416,12 @@ export default function App() {
   }, [repos]);
 
   return (
-    <div className={`${theme === 'dark' ? 'dark bg-black text-white matrix-active' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden`}>
+    <div className={`${theme === 'dark' ? 'dark bg-black text-white' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden`}>
       {/* Cyberpunk Background Effects */}
       {theme === 'dark' && (
         <>
           <div className="cyber-grid fixed inset-0 -z-20" />
-          <div className="scanlines" />
-          
+          <MatrixRain />
           <div className="cyber-particle" style={{ left: '5%', animationDelay: '0s' }} />
           <div className="cyber-particle" style={{ left: '12%', animationDelay: '1s' }} />
           <div className="cyber-particle" style={{ left: '18%', animationDelay: '2s' }} />
