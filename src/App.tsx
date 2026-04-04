@@ -405,7 +405,7 @@ export default function App() {
         languageKey: 'statusCompleted',
         hasDetails: true,
         html_url: 'https://github.com/lu0ck/CRIMSON_SENTINEL',
-        imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
+        imageUrl: '/crimson-sentinel/tela.png',
         fork: false,
         updated_at: ''
       }
