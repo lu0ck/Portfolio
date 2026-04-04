@@ -421,15 +421,15 @@ export default function App() {
         <>
           <div className="cyber-grid fixed inset-0 -z-20" />
           <div className="scanlines" />
-          <div className="cyber-particle" style="left: 10%; animation-delay: 0s;" />
-          <div className="cyber-particle" style="left: 20%; animation-delay: 2s;" />
-          <div className="cyber-particle" style="left: 30%; animation-delay: 4s;" />
-          <div className="cyber-particle" style="left: 40%; animation-delay: 1s;" />
-          <div className="cyber-particle" style="left: 50%; animation-delay: 3s;" />
-          <div className="cyber-particle" style="left: 60%; animation-delay: 5s;" />
-          <div className="cyber-particle" style="left: 70%; animation-delay: 2.5s;" />
-          <div className="cyber-particle" style="left: 80%; animation-delay: 4.5s;" />
-          <div className="cyber-particle" style="left: 90%; animation-delay: 1.5s;" />
+          <div className="cyber-particle" style={{ left: '10%', animationDelay: '0s' }} />
+          <div className="cyber-particle" style={{ left: '20%', animationDelay: '2s' }} />
+          <div className="cyber-particle" style={{ left: '30%', animationDelay: '4s' }} />
+          <div className="cyber-particle" style={{ left: '40%', animationDelay: '1s' }} />
+          <div className="cyber-particle" style={{ left: '50%', animationDelay: '3s' }} />
+          <div className="cyber-particle" style={{ left: '60%', animationDelay: '5s' }} />
+          <div className="cyber-particle" style={{ left: '70%', animationDelay: '2.5s' }} />
+          <div className="cyber-particle" style={{ left: '80%', animationDelay: '4.5s' }} />
+          <div className="cyber-particle" style={{ left: '90%', animationDelay: '1.5s' }} />
         </>
       )}
       {/* Navbar */}
