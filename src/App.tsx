@@ -355,7 +355,7 @@ export default function App() {
           bio: user.bio || t.heroDesc
         });
 
-        const reposToHide = ['lokya', 'jornal', 'lu0ck'];
+        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina'];
         const filteredRepos = allRepos.filter((repo: Repo) => {
           if (repo.fork) return false;
           const nameLower = repo.name.toLowerCase();
