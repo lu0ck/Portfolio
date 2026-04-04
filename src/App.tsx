@@ -355,7 +355,7 @@ export default function App() {
           bio: user.bio || t.heroDesc
         });
 
-        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina'];
+        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina', 'portfolio', 'discord'];
         const filteredRepos = allRepos.filter((repo: Repo) => {
           if (repo.fork) return false;
           const nameLower = repo.name.toLowerCase();
@@ -415,7 +415,23 @@ export default function App() {
   }, [repos]);
 
   return (
-    <div className={`${theme === 'dark' ? 'dark bg-black text-white' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300`}>
+    <div className={`${theme === 'dark' ? 'dark bg-black text-white' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden`}>
+      {/* Cyberpunk Background Effects */}
+      {theme === 'dark' && (
+        <>
+          <div className="cyber-grid fixed inset-0 -z-20" />
+          <div className="scanlines" />
+          <div className="cyber-particle" style="left: 10%; animation-delay: 0s;" />
+          <div className="cyber-particle" style="left: 20%; animation-delay: 2s;" />
+          <div className="cyber-particle" style="left: 30%; animation-delay: 4s;" />
+          <div className="cyber-particle" style="left: 40%; animation-delay: 1s;" />
+          <div className="cyber-particle" style="left: 50%; animation-delay: 3s;" />
+          <div className="cyber-particle" style="left: 60%; animation-delay: 5s;" />
+          <div className="cyber-particle" style="left: 70%; animation-delay: 2.5s;" />
+          <div className="cyber-particle" style="left: 80%; animation-delay: 4.5s;" />
+          <div className="cyber-particle" style="left: 90%; animation-delay: 1.5s;" />
+        </>
+      )}
       {/* Navbar */}
       <nav className={`fixed top-0 w-full px-[5%] py-5 ${theme === 'dark' ? 'bg-black/80 border-zinc-800' : 'bg-white/80 border-zinc-200'} backdrop-blur-xl border-b flex justify-between items-center z-[1000] transition-colors`}>
         <motion.div 
@@ -488,7 +504,7 @@ export default function App() {
           className="relative min-h-[70vh] flex flex-col-reverse md:flex-row items-center justify-between gap-10 mb-[120px]"
         >
           {/* Background Grid */}
-          <div className={`absolute -top-[120px] -left-[50vw] -right-[50vw] -bottom-[50px] ${theme === 'dark' ? 'bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)]' : 'bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)]'} bg-[length:100px_100px] pointer-events-none -z-10`} />
+          <div className={`absolute -top-[120px] -left-[50vw] -right-[50vw] -bottom-[50px] cyber-grid ${theme === 'dark' ? 'bg-[linear-gradient(rgba(239,68,68,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(239,68,68,0.05)_1px,transparent_1px)]' : 'bg-[linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)]'} bg-[length:50px_50px] pointer-events-none -z-10`} />
           
           <div className="flex-1 relative">
             {/* Status Badge */}
