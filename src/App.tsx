@@ -422,15 +422,19 @@ export default function App() {
           <div className="cyber-grid fixed inset-0 -z-20" />
           <div className="scanlines" />
           
-          <div className="cyber-particle" style={{ left: '10%', animationDelay: '0s' }} />
-          <div className="cyber-particle" style={{ left: '20%', animationDelay: '2s' }} />
-          <div className="cyber-particle" style={{ left: '30%', animationDelay: '4s' }} />
-          <div className="cyber-particle" style={{ left: '40%', animationDelay: '1s' }} />
-          <div className="cyber-particle" style={{ left: '50%', animationDelay: '3s' }} />
-          <div className="cyber-particle" style={{ left: '60%', animationDelay: '5s' }} />
-          <div className="cyber-particle" style={{ left: '70%', animationDelay: '2.5s' }} />
-          <div className="cyber-particle" style={{ left: '80%', animationDelay: '4.5s' }} />
-          <div className="cyber-particle" style={{ left: '90%', animationDelay: '1.5s' }} />
+          <div className="cyber-particle" style={{ left: '5%', animationDelay: '0s' }} />
+          <div className="cyber-particle" style={{ left: '12%', animationDelay: '1s' }} />
+          <div className="cyber-particle" style={{ left: '18%', animationDelay: '2s' }} />
+          <div className="cyber-particle" style={{ left: '25%', animationDelay: '3s' }} />
+          <div className="cyber-particle" style={{ left: '32%', animationDelay: '0.5s' }} />
+          <div className="cyber-particle" style={{ left: '40%', animationDelay: '1.5s' }} />
+          <div className="cyber-particle" style={{ left: '48%', animationDelay: '2.5s' }} />
+          <div className="cyber-particle" style={{ left: '55%', animationDelay: '4s' }} />
+          <div className="cyber-particle" style={{ left: '62%', animationDelay: '3.5s' }} />
+          <div className="cyber-particle" style={{ left: '70%', animationDelay: '1.2s' }} />
+          <div className="cyber-particle" style={{ left: '78%', animationDelay: '2.2s' }} />
+          <div className="cyber-particle" style={{ left: '85%', animationDelay: '4.2s' }} />
+          <div className="cyber-particle" style={{ left: '92%', animationDelay: '0.8s' }} />
         </>
       )}
       {/* Navbar */}
