@@ -323,6 +323,16 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
+  const [crimsonSlideIndex, setCrimsonSlideIndex] = useState(0);
+
+  useEffect(() => {
+    if (selectedProject === 'CRIMSON_SENTINEL') {
+      const interval = setInterval(() => {
+        setCrimsonSlideIndex(prev => prev === 0 ? 1 : 0);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [selectedProject]);
 
   const t = translations[lang] as any;
   const username = 'lu0ck';
@@ -884,39 +894,46 @@ export default function App() {
 
               {/* Media Gallery */}
               <div className="relative">
+                {/* Alternating Images - dash and login */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900">
-                    <img 
-                      src="/crimson-sentinel/screenshot1.jpg" 
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={crimsonSlideIndex}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/crimson-sentinel/${crimsonSlideIndex === 0 ? 'dash' : 'login'}.png`}
                       alt="Dashboard"
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                      }}
+                      className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
                   <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900">
                     <img 
-                      src="/crimson-sentinel/screenshot2.jpg" 
-                      alt="Price Charts"
+                      src="/crimson-sentinel/list.png" 
+                      alt="Product List"
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                      }}
                     />
                   </div>
                 </div>
-                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
-                  <iframe 
-                    id="crimson-video"
-                    className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/VIDEO_ID"
-                    title="Crimson Sentinel Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                <div className="flex gap-2 mx-2 mb-2">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 flex-1">
+                    <img 
+                      src="/crimson-sentinel/config.png" 
+                      alt="Config"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 flex-1">
+                    <iframe 
+                      id="crimson-video"
+                      className="w-full h-full rounded-lg"
+                      src="https://www.youtube.com/embed/fCOCOXnuPms"
+                      title="Crimson Sentinel Demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
                 </div>
               </div>
 
