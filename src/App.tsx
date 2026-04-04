@@ -328,7 +328,7 @@ export default function App() {
   useEffect(() => {
     if (selectedProject === 'CRIMSON_SENTINEL') {
       const interval = setInterval(() => {
-        setCrimsonSlideIndex(prev => prev === 0 ? 1 : 0);
+        setCrimsonSlideIndex(prev => (prev + 1) % 4);
       }, 3000);
       return () => clearInterval(interval);
     }
@@ -894,46 +894,41 @@ export default function App() {
 
               {/* Media Gallery */}
               <div className="relative">
-                {/* Alternating Images - dash and login */}
+                {/* Alternating Images - top row with 2 slots that cycle through all 4 images */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
                   <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
                     <motion.img 
-                      key={crimsonSlideIndex}
+                      key={`img1-${crimsonSlideIndex}`}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
                       transition={{ duration: 0.5 }}
-                      src={`/crimson-sentinel/${crimsonSlideIndex === 0 ? 'dash' : 'login'}.png`}
-                      alt="Dashboard"
+                      src={`/crimson-sentinel/${crimsonSlideIndex === 0 ? 'dash' : crimsonSlideIndex === 1 ? 'login' : crimsonSlideIndex === 2 ? 'list' : 'config'}.png`}
+                      alt="Slide 1"
                       className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900">
-                    <img 
-                      src="/crimson-sentinel/list.png" 
-                      alt="Product List"
-                      className="w-full h-full object-cover"
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`img2-${crimsonSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/crimson-sentinel/${crimsonSlideIndex === 0 ? 'login' : crimsonSlideIndex === 1 ? 'list' : crimsonSlideIndex === 2 ? 'config' : 'dash'}.png`}
+                      alt="Slide 2"
+                      className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
                 </div>
-                <div className="flex gap-2 mx-2 mb-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 flex-1">
-                    <img 
-                      src="/crimson-sentinel/config.png" 
-                      alt="Config"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 flex-1">
-                    <iframe 
-                      id="crimson-video"
-                      className="w-full h-full rounded-lg"
-                      src="https://www.youtube.com/embed/fCOCOXnuPms"
-                      title="Crimson Sentinel Demo"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
+                {/* Video only */}
+                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
+                  <iframe 
+                    id="crimson-video"
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/fCOCOXnuPms"
+                    title="Crimson Sentinel Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
 
