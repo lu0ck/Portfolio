@@ -415,26 +415,12 @@ export default function App() {
   }, [repos]);
 
   return (
-    <div className={`${theme === 'dark' ? 'dark bg-black text-white' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden`}>
+    <div className={`${theme === 'dark' ? 'dark bg-black text-white matrix-active' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden`}>
       {/* Cyberpunk Background Effects */}
       {theme === 'dark' && (
         <>
           <div className="cyber-grid fixed inset-0 -z-20" />
           <div className="scanlines" />
-          
-          {/* Matrix Rain */}
-          <div className="matrix-rain">
-            <div className="matrix-column" style={{ left: '5%', animationDuration: '8s', animationDelay: '0s' }}>1 0 1 1 0 1 0 1 0 0 1 1 0 1 0 1 1 0 1 0 0 1 1 0 1 1 0 1 0 1 0 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 1 0</div>
-            <div className="matrix-column" style={{ left: '15%', animationDuration: '12s', animationDelay: '2s' }}>0 1 0 1 1 0 1 0 1 1 0 1 1 0 1 1 1 0 1 0 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0</div>
-            <div className="matrix-column" style={{ left: '25%', animationDuration: '10s', animationDelay: '4s' }}>1 1 0 1 0 1 1 0 1 0 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0</div>
-            <div className="matrix-column" style={{ left: '35%', animationDuration: '9s', animationDelay: '1s' }}>0 1 1 1 0 1 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0</div>
-            <div className="matrix-column" style={{ left: '45%', animationDuration: '11s', animationDelay: '3s' }}>1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1</div>
-            <div className="matrix-column" style={{ left: '55%', animationDuration: '7s', animationDelay: '5s' }}>1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0</div>
-            <div className="matrix-column" style={{ left: '65%', animationDuration: '13s', animationDelay: '2.5s' }}>0 1 0 1 0 1 1 0 0 1 0 1 0 1 1 0 1 0 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 1 0</div>
-            <div className="matrix-column" style={{ left: '75%', animationDuration: '8s', animationDelay: '4.5s' }}>1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1</div>
-            <div className="matrix-column" style={{ left: '85%', animationDuration: '10s', animationDelay: '1.5s' }}>1 0 1 0 1 1 0 1 0 1 0 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1</div>
-            <div className="matrix-column" style={{ left: '95%', animationDuration: '12s', animationDelay: '3.5s' }}>0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1 1 1 0 1 0 1</div>
-          </div>
           
           <div className="cyber-particle" style={{ left: '10%', animationDelay: '0s' }} />
           <div className="cyber-particle" style={{ left: '20%', animationDelay: '2s' }} />
