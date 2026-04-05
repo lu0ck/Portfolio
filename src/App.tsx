@@ -158,8 +158,9 @@ const translations = {
     oficinaDetailsFutureTitle: "Future (Expansion)",
     oficinaDetailsFuture: "Mobile App (Capacitor), Desktop App (Tauri), WhatsApp Integration",
     oficinaDetailsPitch: "Developed a complete management system for motorcycle repair shops with React and Supabase. Controls customers, vehicles, services, inventory and finances. Stack: React + TypeScript + Tailwind + Supabase.",
-    anotaDetailsTitle: "Anotaaqui - Personal Financial Management",
-    navLogo: "Lucas Engenheiro de Software",
+    anotaDetailsTitle: "Anotaaqui - Personal Financial Management"
+  },
+  pt: {
     navAbout: "Sobre", navProj: "Projetos", navContact: "Contato",
     heroSubtitle: "Desenvolvedor Full Stack",
     heroGreeting: "OLÁ, EU SOU",
@@ -397,10 +398,7 @@ const techStack = [
 ];
 
 export default function App() {
-  const [lang, setLang] = useState<Language>(() => {
-    const saved = localStorage.getItem('portfolio-lang');
-    return (saved as Language) || 'en';
-  });
+  const [lang, setLang] = useState<Language>('en');
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [userData, setUserData] = useState<UserData | null>(null);
   const [repos, setRepos] = useState<Repo[]>([]);
@@ -627,7 +625,11 @@ export default function App() {
                     {languages.map(l => (
                       <button 
                         key={l.code}
-                        onClick={() => { localStorage.setItem('portfolio-lang', l.code); setLang(l.code as Language); setIsLangMenuOpen(false); }}
+                        onClick={() => { 
+                          try { localStorage.setItem('portfolio-lang', l.code); } catch(e) {}
+                          setLang(l.code as Language); 
+                          setIsLangMenuOpen(false); 
+                        }}
                         className={`bg-transparent border-none px-4 py-2.5 ${theme === 'dark' ? 'text-zinc-400 hover:bg-white/5 hover:text-white' : 'text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900'} text-left cursor-pointer flex items-center gap-2 transition-all`}
                       >
                         {l.flag} {l.label}
