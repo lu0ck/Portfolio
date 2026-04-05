@@ -509,8 +509,8 @@ export default function App() {
 
   return (
     <div className={`${theme === 'dark' ? 'dark bg-black text-white' : 'bg-white text-zinc-900'} min-h-screen font-sans selection:bg-red-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden`}>
-      {/* Cyberpunk Background Effects */}
-      {theme === 'dark' && (
+      {/* Background Effects */}
+      {theme === 'dark' ? (
         <>
           <div className="cyber-grid fixed inset-0 -z-20" />
           <MatrixRain />
@@ -527,6 +527,23 @@ export default function App() {
           <div className="cyber-particle" style={{ left: '78%', animationDelay: '2.2s' }} />
           <div className="cyber-particle" style={{ left: '85%', animationDelay: '4.2s' }} />
           <div className="cyber-particle" style={{ left: '92%', animationDelay: '0.8s' }} />
+        </>
+      ) : (
+        <>
+          <div className="light-grid fixed inset-0 -z-20" />
+          <div className="light-particle" style={{ left: '5%', animationDelay: '0s' }} />
+          <div className="light-particle" style={{ left: '12%', animationDelay: '1s' }} />
+          <div className="light-particle" style={{ left: '18%', animationDelay: '2s' }} />
+          <div className="light-particle" style={{ left: '25%', animationDelay: '3s' }} />
+          <div className="light-particle" style={{ left: '32%', animationDelay: '0.5s' }} />
+          <div className="light-particle" style={{ left: '40%', animationDelay: '1.5s' }} />
+          <div className="light-particle" style={{ left: '48%', animationDelay: '2.5s' }} />
+          <div className="light-particle" style={{ left: '55%', animationDelay: '4s' }} />
+          <div className="light-particle" style={{ left: '62%', animationDelay: '3.5s' }} />
+          <div className="light-particle" style={{ left: '70%', animationDelay: '1.2s' }} />
+          <div className="light-particle" style={{ left: '78%', animationDelay: '2.2s' }} />
+          <div className="light-particle" style={{ left: '85%', animationDelay: '4.2s' }} />
+          <div className="light-particle" style={{ left: '92%', animationDelay: '0.8s' }} />
         </>
       )}
       {/* Navbar */}

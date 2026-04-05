@@ -22,11 +22,20 @@
   }
 }
 
-/* Cyberpunk Background Effects */
+/* Cyberpunk Grid - Dark Mode */
 .cyber-grid {
   background-image: 
     linear-gradient(rgba(239, 68, 68, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(239, 68, 68, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: grid-move 20s linear infinite;
+}
+
+/* Light Mode Grid */
+.light-grid {
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
   animation: grid-move 20s linear infinite;
 }
@@ -58,6 +67,18 @@
   pointer-events: none;
   animation: particle-float 12s linear infinite;
   box-shadow: 0 0 10px #ef4444, 0 0 20px #ef4444;
+}
+
+/* Light Mode Particle */
+.light-particle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: #06b6d4;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: particle-float 12s linear infinite;
+  box-shadow: 0 0 10px #06b6d4, 0 0 20px #06b6d4;
 }
 
 @keyframes particle-float {
