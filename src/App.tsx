@@ -64,11 +64,11 @@ const translations = {
     statusCompleted: "Completed",
     descOficina: "Complete management and control system focused on motorcycle repair shops.",
     descAnota: "Application dedicated to creating notes and daily personal organization.",
-    descOrganizaAI: "AI-powered task and project management application",
+    descOrganizaAI: "Complete management software for ride-share drivers",
     descOpaEuQuero: "E-commerce platform for local products",
     repoOwn: "Own Profile Repository",
     loading: "Loading repositories...",
-    contactTitle: "Let's Talk?", 
+    contactTitle: "Let's Talk?",
     contactDesc: "I am currently open to new opportunities and connections. If you have a job opening, a project, or just want to chat, feel free to reach out!",
     btnMessage: "Send Message",
     eduTitle: "Education",
@@ -76,6 +76,27 @@ const translations = {
     eduADS: "Analysis and Systems Development",
     eduFinish: "Finishing in",
     footerText: "Designed and developed. © 2026 lucas.",
+    organizaAiDetailsTitle: "OrganizaAi - Intelligent Management for Ride-Share Drivers",
+    organizaAiDetailsSubtitle: "React Electron TypeScript Tailwind Desktop",
+    organizaAiDetailsIntro: "Complete management software for ride-share drivers to control earnings, expenses, goals, and vehicle maintenance.",
+    organizaAiDetailsAboutTitle: "📱 About the Project",
+    organizaAiDetailsAboutDesc: "OrganizaAi is the ultimate companion for ride-share drivers and delivery professionals seeking to professionalize their financial and operational management. Developed with focus on usability and efficiency, the app provides full control over earnings, expenses, goals, and vehicle maintenance.",
+    organizaAiDetailsFeaturesTitle: "✨ Main Features",
+    organizaAiDetailsFeatures: [
+      "Smart Dashboard: Real net profit, hourly and KM performance tracking",
+      "Weekly Agenda: Work schedule planning with earnings simulation",
+      "Fuel Calculator: Gasoline vs Ethanol efficiency comparison",
+      "Maintenance Management: Vehicle health tracking with automatic alerts",
+      "Professional Reports: Monthly PDF/CSV export for tax declaration",
+      "Data Security: Local backup with weekly reminders",
+      "Desktop App: Windows and Linux support",
+      "Dark Mode: Complete theme support"
+    ],
+    organizaAiDetailsTechTitle: "🛠️ Technologies",
+    organizaAiDetailsTechFrontend: "Frontend: React, TypeScript, Electron, Tailwind CSS",
+    organizaAiDetailsTechDesktop: "Desktop: Windows e Linux",
+    organizaAiDetailsTechData: "Data: Local Storage, PDF/CSV Export",
+    organizaAiDetailsPitch: "Developed a complete management system for ride-share drivers with React and Electron. Controls earnings, expenses, maintenance and generates professional reports. Stack: React + TypeScript + Electron + Tailwind.",
     anotaDetailsTitle: "Anotaaqui - Personal Financial Management",
     anotaDetailsSubtitle: "React TypeScript Vite Tailwind Supabase License Status hCaptcha",
     anotaDetailsIntro: "Complete personal financial management application with control of income, expenses, investments, goals and much more.",
@@ -176,11 +197,11 @@ const translations = {
     statusCompleted: "Concluído",
     descOficina: "Sistema completo de gerenciamento e controle focado para oficina de motos.",
     descAnota: "Aplicação dedicada à criação de anotações e organização pessoal diária.",
-    descOrganizaAI: "Aplicação de gestão de tarefas e projetos com IA",
+    descOrganizaAI: "Software completo de gestão para motoristas de app",
     descOpaEuQuero: "Plataforma de e-commerce para produtos locais",
     repoOwn: "Repositório Próprio",
     loading: "Carregando repositórios...",
-    contactTitle: "Vamos Conversar?", 
+    contactTitle: "Vamos Conversar?",
     contactDesc: "Atualmente estou aberto a novas oportunidades e conexões. Se você tem uma vaga, projeto ou apenas quer bater um papo, sinta-se livre para entrar em contato!",
     btnMessage: "Enviar Mensagem",
     eduTitle: "Educação",
@@ -188,6 +209,27 @@ const translations = {
     eduADS: "Análise e Desenvolvimento de Sistemas",
     eduFinish: "Conclusão em",
     footerText: "Projetado e desenvolvido. © 2026 lucas.",
+    organizaAiDetailsTitle: "OrganizaAi - Gestão Inteligente para Motoristas de App",
+    organizaAiDetailsSubtitle: "React Electron TypeScript Tailwind Desktop",
+    organizaAiDetailsIntro: "Software completo para motoristas de aplicativo gerenciarem ganhos, despesas, metas e manutenção do veículo.",
+    organizaAiDetailsAboutTitle: "📱 Sobre o Projeto",
+    organizaAiDetailsAboutDesc: "OrganizaAi é o companheiro definitivo para motoristas de aplicativo e entregadores que buscam profissionalizar sua gestão financeira e operacional. Desenvolvido com foco em usabilidade e eficiência, o app permite o controle total de ganhos, despesas, metas e manutenção do veículo.",
+    organizaAiDetailsFeaturesTitle: "✨ Funcionalidades Principais",
+    organizaAiDetailsFeatures: [
+      "Dashboard Inteligente: Lucro líquido real, desempenho por hora e KM",
+      "Agenda Semanal: Planejamento com simulação de ganhos",
+      "Calculadora de Combustível: Gasolina vs Álcool",
+      "Gestão de Manutenção: Alertas automáticos para trocas",
+      "Relatórios Profissionais: Exportação PDF/CSV",
+      "Segurança de Dados: Backup local semanal",
+      "App Desktop: Windows e Linux",
+      "Modo Escuro: Tema completo"
+    ],
+    organizaAiDetailsTechTitle: "🛠️ Tecnologias",
+    organizaAiDetailsTechFrontend: "Frontend: React, TypeScript, Electron, Tailwind CSS",
+    organizaAiDetailsTechDesktop: "Desktop: Windows e Linux",
+    organizaAiDetailsTechData: "Dados: Local Storage, Export PDF/CSV",
+    organizaAiDetailsPitch: "Desenvolvi um sistema completo de gestão para motoristas de app com React e Electron. Controla ganhos, despesas, manutenção e gera relatórios profissionais. Stack: React + TypeScript + Electron + Tailwind.",
     anotaDetailsTitle: "Anotaaqui - Gestão Financeira Pessoal",
     anotaDetailsSubtitle: "React TypeScript Vite Tailwind Supabase License Status hCaptcha",
     anotaDetailsIntro: "Aplicativo completo de gestão financeira pessoal com controle de receitas, despesas, investimentos, metas e muito mais.",
@@ -288,11 +330,11 @@ const translations = {
     statusCompleted: "Completado",
     descOficina: "Sistema completo de gestión y control enfocado a talleres de motos.",
     descAnota: "Aplicación dedicada a la creación de notas y organización personal diaria.",
-    descOrganizaAI: "Aplicación de gestión de tareas y proyectos con IA",
+    descOrganizaAI: "Software completo de gestión para conductores de apps",
     descOpaEuQuero: "Plataforma de e-commerce para productos locales",
     repoOwn: "Repositorio Propio",
     loading: "Cargando repositórios...",
-    contactTitle: "¿Hablamos?", 
+    contactTitle: "¿Hablamos?",
     contactDesc: "Actualmente estoy abierto a nuevas oportunidades e conexiones. Si tienes una vacante, un proyecto o simplemente quieres saludar, ¡no dudes en contactarme!",
     btnMessage: "Enviar Mensaje",
     eduTitle: "Educación",
@@ -300,6 +342,27 @@ const translations = {
     eduADS: "Análisis y Desarrollo de Sistemas",
     eduFinish: "Finalización en",
     footerText: "Diseñado y desarrollado. © 2026 lucas.",
+    organizaAiDetailsTitle: "OrganizaAi - Gestión Inteligente para Conductores de Apps",
+    organizaAiDetailsSubtitle: "React Electron TypeScript Tailwind Desktop",
+    organizaAiDetailsIntro: "Software completo para conductores de apps gestionar ganancias, gastos, metas y mantenimiento del vehículo.",
+    organizaAiDetailsAboutTitle: "📱 Sobre el Proyecto",
+    organizaAiDetailsAboutDesc: "OrganizaAi es el compañero definitivo para conductores de apps y repartidores que buscan profesionalizar su gestión financiera y operacional. Desarrollado con enfoque en usabilidad y eficiencia.",
+    organizaAiDetailsFeaturesTitle: "✨ Funcionalidades Principales",
+    organizaAiDetailsFeatures: [
+      "Dashboard Inteligente: Ganancia neta real, rendimiento por hora y KM",
+      "Agenda Semanal: Planificación con simulación de ganancias",
+      "Calculadora de Combustible: Gasolina vs Etanol",
+      "Gestión de Mantenimiento: Alertas automáticos",
+      "Informes Profesionales: Exportación PDF/CSV",
+      "Seguridad de Datos: Backup local semanal",
+      "App Desktop: Windows y Linux",
+      "Modo Oscuro: Tema completo"
+    ],
+    organizaAiDetailsTechTitle: "🛠️ Tecnologías",
+    organizaAiDetailsTechFrontend: "Frontend: React, TypeScript, Electron, Tailwind CSS",
+    organizaAiDetailsTechDesktop: "Desktop: Windows y Linux",
+    organizaAiDetailsTechData: "Datos: Local Storage, Export PDF/CSV",
+    organizaAiDetailsPitch: "Desarrollé un sistema completo de gestión para conductores de apps con React y Electron. Controla ganancias, gastos, mantenimiento y genera informes profesionales. Stack: React + TypeScript + Electron + Tailwind.",
     anotaDetailsTitle: "Anotaaqui - Gestión Financiera Personal",
     anotaDetailsSubtitle: "React TypeScript Vite Tailwind Supabase License Status hCaptcha",
     anotaDetailsIntro: "Aplicación completa de gestión financiera personal com control de ingresos, gastos, inversiones, metas y mucho más.",
@@ -408,6 +471,7 @@ export default function App() {
   const [crimsonSlideIndex, setCrimsonSlideIndex] = useState(0);
   const [anotaaquiSlideIndex, setAnotaaquiSlideIndex] = useState(0);
   const [oficinaSlideIndex, setOficinaSlideIndex] = useState(0);
+  const [organizaAiSlideIndex, setOrganizaAiSlideIndex] = useState(0);
 
   useEffect(() => {
     if (selectedProject === 'CRIMSON_SENTINEL') {
@@ -431,6 +495,15 @@ export default function App() {
     if (selectedProject === 'OFICINA_MOTOS') {
       const interval = setInterval(() => {
         setOficinaSlideIndex(prev => (prev + 1) % 4);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [selectedProject]);
+
+  useEffect(() => {
+    if (selectedProject === 'OrganizaAI') {
+      const interval = setInterval(() => {
+        setOrganizaAiSlideIndex(prev => (prev + 1) % 8);
       }, 3000);
       return () => clearInterval(interval);
     }
@@ -1469,7 +1542,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* OrganizaAI Modal - Future Project */}
+      {/* OrganizaAI Modal */}
       <AnimatePresence>
         {selectedProject === 'OrganizaAI' && (
           <motion.div 
@@ -1493,27 +1566,100 @@ export default function App() {
                 <ChevronDown className="rotate-180" size={24} />
               </button>
 
-              <div className="p-6 md:p-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="px-3 py-1 bg-amber-500/20 text-amber-500 text-xs font-bold rounded-full uppercase">
-                    {t.statusFuture}
-                  </span>
+              {/* Media Gallery */}
+              <div className="relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`org1-${organizaAiSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/OrganizaAi/${['dash', 'agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio'][organizaAiSlideIndex]}.png`}
+                      alt="Slide 1"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                    <motion.img 
+                      key={`org2-${organizaAiSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/OrganizaAi/${['agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio', 'dash'][organizaAiSlideIndex]}.png`}
+                      alt="Slide 2"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
                 </div>
-                
-                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">OrganizaAI</h2>
-                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>React TypeScript AI Automation</p>
+                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
+                  <iframe 
+                    id="organiza-video"
+                    className="w-full h-full rounded-lg"
+                    src=""
+                    title="OrganizaAi Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              <div className="p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.organizaAiDetailsTitle}</h2>
+                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>{t.organizaAiDetailsSubtitle}</p>
                 
                 <p className={`text-lg ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'} mb-8 leading-relaxed`}>
-                  {t.descOrganizaAI}
+                  {t.organizaAiDetailsIntro}
                 </p>
 
-                <div className={`p-6 ${theme === 'dark' ? 'bg-zinc-900 border-zinc-800' : 'bg-zinc-50 border-zinc-200'} border rounded-xl text-center`}>
-                  <p className={`text-lg ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} mb-4`}>
-                    🚀 {t.statusFuture} - Projeto em desenvolvimento
-                  </p>
-                  <p className={`text-sm ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-500'}`}>
-                    Em breve: mais detalhes, screenshots e funcionalidades.
-                  </p>
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                      {t.organizaAiDetailsAboutTitle}
+                    </h3>
+                    <p className={`${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} leading-relaxed`}>
+                      {t.organizaAiDetailsAboutDesc}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      {t.organizaAiDetailsFeaturesTitle}
+                    </h3>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+                      {t.organizaAiDetailsFeatures.map((feature: string, idx: number) => (
+                        <li key={idx} className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} flex items-start gap-2`}>
+                          <span className="text-red-500 mt-1">•</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                        {t.organizaAiDetailsTechTitle}
+                      </h3>
+                      <div className="space-y-2">
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          {t.organizaAiDetailsTechFrontend}
+                        </p>
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          {t.organizaAiDetailsTechDesktop}
+                        </p>
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          {t.organizaAiDetailsTechData}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={`p-4 ${theme === 'dark' ? 'bg-red-500/10 border-red-500/20' : 'bg-red-50 border-red-100'} border rounded-lg`}>
+                    <p className={`text-sm italic ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'}`}>
+                      <span className="font-bold text-red-500">Pitch:</span> "{t.organizaAiDetailsPitch}"
+                    </p>
+                  </div>
                 </div>
 
                 <div className="mt-12 flex flex-wrap gap-4">
