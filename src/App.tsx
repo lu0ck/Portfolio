@@ -505,7 +505,7 @@ export default function App() {
         name: 'OrganizaAI',
         description: null,
         descriptionKey: 'descOrganizaAI',
-        languageKey: 'statusFuture',
+        languageKey: 'statusCompleted',
         hasDetails: true,
         html_url: 'https://github.com/lu0ck/OrganizaAI',
         imageUrl: '/OrganizaAi/tela.png',
