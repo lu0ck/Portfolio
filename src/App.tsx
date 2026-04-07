@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import MatrixRain from './components/MatrixRain';
+import ImageModal from './components/ImageModal';
 
 // --- Types ---
 type Language = 'en' | 'pt' | 'es';
@@ -472,6 +473,7 @@ export default function App() {
   const [anotaaquiSlideIndex, setAnotaaquiSlideIndex] = useState(0);
   const [oficinaSlideIndex, setOficinaSlideIndex] = useState(0);
   const [organizaAiSlideIndex, setOrganizaAiSlideIndex] = useState(0);
+  const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
 
   useEffect(() => {
     if (selectedProject === 'CRIMSON_SENTINEL') {
@@ -1135,7 +1137,13 @@ export default function App() {
               <div className="relative">
                 {/* Alternating Images - top row with 2 slots that cycle through all 4 images */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/crimson-sentinel/${crimsonSlideIndex === 0 ? 'dash' : crimsonSlideIndex === 1 ? 'login' : crimsonSlideIndex === 2 ? 'list' : 'config'}.png`, 
+                      alt: 'Crimson Sentinel Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`img1-${crimsonSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1146,7 +1154,13 @@ export default function App() {
                       className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/crimson-sentinel/${crimsonSlideIndex === 0 ? 'login' : crimsonSlideIndex === 1 ? 'list' : crimsonSlideIndex === 2 ? 'config' : 'dash'}.png`, 
+                      alt: 'Crimson Sentinel Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`img2-${crimsonSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1279,7 +1293,13 @@ export default function App() {
               {/* Media Gallery */}
               <div className="relative">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/anotaaqui/${anotaaquiSlideIndex === 0 ? 'dash' : anotaaquiSlideIndex === 1 ? 'login' : anotaaquiSlideIndex === 2 ? 'list' : 'config'}.png`, 
+                      alt: 'Anotaaqui Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`anota1-${anotaaquiSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1290,7 +1310,13 @@ export default function App() {
                       className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/anotaaqui/${anotaaquiSlideIndex === 0 ? 'login' : anotaaquiSlideIndex === 1 ? 'list' : anotaaquiSlideIndex === 2 ? 'config' : 'dash'}.png`, 
+                      alt: 'Anotaaqui Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`anota2-${anotaaquiSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1421,7 +1447,13 @@ export default function App() {
               {/* Media Gallery */}
               <div className="relative">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/oficina_motos/${oficinaSlideIndex === 0 ? 'dash' : oficinaSlideIndex === 1 ? 'login' : oficinaSlideIndex === 2 ? 'list' : 'config'}.png`, 
+                      alt: 'OFICINA_MOTOS Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`oficina1-${oficinaSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1432,13 +1464,24 @@ export default function App() {
                       className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/oficina_motos/${oficinaSlideIndex === 0 ? 'login' : oficinaSlideIndex === 1 ? 'list' : oficinaSlideIndex === 2 ? 'config' : 'dash'}.png`, 
+                      alt: 'OFICINA_MOTOS Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`oficina2-${oficinaSlideIndex}`}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5 }}
                       src={`/oficina_motos/${oficinaSlideIndex === 0 ? 'login' : oficinaSlideIndex === 1 ? 'list' : oficinaSlideIndex === 2 ? 'config' : 'dash'}.png`}
+                      alt="Slide 2"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
                       alt="Slide 2"
                       className="w-full h-full object-cover absolute inset-0"
                     />
@@ -1569,7 +1612,13 @@ export default function App() {
               {/* Media Gallery */}
               <div className="relative">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/OrganizaAi/${['dash', 'agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio'][organizaAiSlideIndex]}.png`, 
+                      alt: 'OrganizaAi Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`org1-${organizaAiSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1580,7 +1629,13 @@ export default function App() {
                       className="w-full h-full object-cover absolute inset-0"
                     />
                   </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/OrganizaAi/${['agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio', 'dash'][organizaAiSlideIndex]}.png`, 
+                      alt: 'OrganizaAi Screenshot' 
+                    })}
+                  >
                     <motion.img 
                       key={`org2-${organizaAiSlideIndex}`}
                       initial={{ opacity: 0 }}
@@ -1752,6 +1807,14 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Image Modal for zoom */}
+      <ImageModal
+        src={modalImage?.src || ''}
+        alt={modalImage?.alt || ''}
+        isOpen={modalImage !== null}
+        onClose={() => setModalImage(null)}
+      />
     </div>
   );
 }
