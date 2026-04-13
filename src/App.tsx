@@ -622,17 +622,74 @@ export default function App() {
 
   const displayRepos = useMemo(() => {
     const privateRepos: Repo[] = [
-{
-      name: 'CRIMSON_SENTINEL',
-      description: null,
-      descriptionKey: 'descCrimson',
-      languageKey: 'statusCompleted',
-      hasDetails: true,
-      html_url: 'https://github.com/lu0ck/CRIMSON_SENTINEL',
-      imageUrl: '',
-      fork: false,
-      updated_at: ''
-    }
+      {
+        name: 'OFICINA_MOTOS',
+        description: null,
+        descriptionKey: 'descOficina',
+        languageKey: 'statusInProgress',
+        isPrivate: true,
+        hasDetails: true,
+        imageUrl: '/oficina_motos/tela.png', 
+        html_url: 'https://github.com/lu0ck/OFICINA_MOTOS',
+        fork: false,
+        updated_at: ''
+      },
+      {
+        name: 'anotaaqui',
+        description: null,
+        descriptionKey: 'descAnota',
+        languageKey: 'statusCompleted',
+        isSiteLink: true,
+        hasDetails: true,
+        html_url: 'https://anotaaqui.online/',
+        imageUrl: '/anotaaqui/tela.png', 
+        fork: false,
+        updated_at: ''
+      },
+      {
+        name: 'OrganizaAI',
+        description: null,
+        descriptionKey: 'descOrganizaAI',
+        languageKey: 'statusCompleted',
+        hasDetails: true,
+        html_url: 'https://github.com/lu0ck/OrganizaAI',
+        imageUrl: '/OrganizaAi/tela.png',
+        fork: false,
+        updated_at: ''
+      },
+      {
+        name: 'CRONUS',
+        description: null,
+        descriptionKey: 'descCronus',
+        languageKey: 'statusFuture',
+        hasDetails: true,
+        html_url: 'https://github.com/lu0ck/cronus---cyber-productivity',
+        imageUrl: '/cronus---cyber-productivity/tela.png',
+        fork: false,
+        updated_at: ''
+      },
+      {
+        name: 'opaeuquero',
+        description: null,
+        descriptionKey: 'descOpaEuQuero',
+        languageKey: 'statusFuture',
+        hasDetails: true,
+        html_url: 'https://github.com/lu0ck/opaeuquero',
+        imageUrl: '/opaeuquero/tela.png',
+        fork: false,
+        updated_at: ''
+      },
+      {
+        name: 'CRIMSON_SENTINEL',
+        description: null,
+        descriptionKey: 'descCrimson',
+        languageKey: 'statusCompleted',
+        hasDetails: true,
+        html_url: 'https://github.com/lu0ck/CRIMSON_SENTINEL',
+        imageUrl: '/crimson-sentinel/tela.png',
+        fork: false,
+        updated_at: ''
+      }
     ];
 
     return [...privateRepos, ...repos].slice(0, 6);
