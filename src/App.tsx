@@ -523,7 +523,7 @@ const techStack = [
 
 const organizaAiImages = ['agenda', 'dash', 'dash2', 'despesas', 'gesta', 'lancamentos', 'metas', 'perfil', 'relatorio'].map(name => `/OrganizaAi/${name}.png`);
 const crimsonImages = ['dash', 'login', 'list', 'config'].map(name => `/crimson-sentinel/${name}.png`);
-const anotaaquiImages = ['dash', 'login', 'list', 'config'].map(name => `/anotaaqui/${name}.png`);
+const anotaaquiImages = [1, 2, 3, 4, 5, 6, 7, 8, 9].map(n => `/anotaaqui/${n}.png`);
 const oficinaImages = ['dash', 'login', 'list', 'config'].map(name => `/oficina_motos/${name}.png`);
 
 export default function App() {
@@ -554,7 +554,7 @@ export default function App() {
   useEffect(() => {
     if (selectedProject === 'anotaaqui') {
       const interval = setInterval(() => {
-        setAnotaaquiSlideIndex(prev => (prev + 1) % 4);
+        setAnotaaquiSlideIndex(prev => (prev + 1) % 9);
       }, 3000);
       return () => clearInterval(interval);
     }
@@ -1401,15 +1401,15 @@ export default function App() {
             className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
             onClick={() => {
               setModalImages(anotaaquiImages);
-              setModalImageIndex((anotaaquiSlideIndex + 1) % 4);
-            }}
-          >
-            <motion.img
-              key={`anota2-${anotaaquiSlideIndex}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              src={anotaaquiImages[(anotaaquiSlideIndex + 1) % 4]}
+setModalImageIndex((anotaaquiSlideIndex + 1) % 9);
+          }}
+        >
+          <motion.img
+            key={`anota2-${anotaaquiSlideIndex}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            src={anotaaquiImages[(anotaaquiSlideIndex + 1) % 9]}
               alt="Slide 2"
               className="w-full h-full object-cover absolute inset-0"
             />
