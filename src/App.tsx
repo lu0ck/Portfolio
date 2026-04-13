@@ -4,16 +4,14 @@
  */
 
 import { useState, useEffect, useMemo } from 'react';
-import {
-  Github,
-  ExternalLink,
-  Lock,
-  FolderOpen,
-  Send,
-  Linkedin,
+import { 
+  Github, 
+  ExternalLink, 
+  Lock, 
+  FolderOpen, 
+  Send, 
+  Linkedin, 
   ChevronDown,
-  ChevronLeft,
-  ChevronRight,
   Code2,
   Terminal,
   GraduationCap,
@@ -568,7 +566,7 @@ export default function App() {
   useEffect(() => {
     if (selectedProject === 'OrganizaAI') {
       const interval = setInterval(() => {
-        setOrganizaAiSlideIndex(prev => (prev + 1) % 9);
+        setOrganizaAiSlideIndex(prev => (prev + 1) % 8);
       }, 3000);
       return () => clearInterval(interval);
     }
@@ -1687,59 +1685,44 @@ export default function App() {
                 <ChevronDown className="rotate-180" size={24} />
               </button>
 
-{/* Media Gallery */}
-          <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-              <div 
-              className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
-              onClick={() => setModalImage({
-                src: `/OrganizaAi/${['agenda', 'dash', 'dash2', 'despesas', 'gesta', 'lancamentos', 'metas', 'perfil', 'relatorio'][organizaAiSlideIndex]}.png`,
-                alt: 'OrganizaAi Screenshot'
-              })}
-            >
-              <motion.img
-                key={`org1-${organizaAiSlideIndex}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                src={`/OrganizaAi/${['agenda', 'dash', 'dash2', 'despesas', 'gesta', 'lancamentos', 'metas', 'perfil', 'relatorio'][organizaAiSlideIndex]}.png`}
-                alt="Slide 1"
-                className="w-full h-full object-cover absolute inset-0"
-              />
-              <button
-                onClick={(e) => { e.stopPropagation(); setOrganizaAiSlideIndex(prev => prev === 0 ? 8 : prev - 1); }}
-                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-all z-10"
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <button
-                onClick={(e) => { e.stopPropagation(); setOrganizaAiSlideIndex(prev => prev === 8 ? 0 : prev + 1); }}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-all z-10"
-              >
-                <ChevronRight size={24} />
-              </button>
-              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-black/50 rounded-full text-white text-xs">
-                {organizaAiSlideIndex + 1} / 9
-              </div>
-            </div>
-            <div 
-              className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
-              onClick={() => setModalImage({
-                src: `/OrganizaAi/${['dash', 'dash2', 'despesas', 'gesta', 'lancamentos', 'metas', 'perfil', 'relatorio', 'agenda'][(organizaAiSlideIndex + 1) % 9]}.png`,
-                alt: 'OrganizaAi Screenshot'
-              })}
-            >
-              <motion.img
-                key={`org2-${organizaAiSlideIndex}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                src={`/OrganizaAi/${['dash', 'dash2', 'despesas', 'gesta', 'lancamentos', 'metas', 'perfil', 'relatorio', 'agenda'][(organizaAiSlideIndex + 1) % 9]}.png`}
-                alt="Slide 2"
-                className="w-full h-full object-cover absolute inset-0"
-              />
-            </div>
-            </div>
+              {/* Media Gallery */}
+              <div className="relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/OrganizaAi/${['dash', 'agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio'][organizaAiSlideIndex]}.png`, 
+                      alt: 'OrganizaAi Screenshot' 
+                    })}
+                  >
+                    <motion.img 
+                      key={`org1-${organizaAiSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/OrganizaAi/${['dash', 'agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio'][organizaAiSlideIndex]}.png`}
+                      alt="Slide 1"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                  <div 
+                    className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: `/OrganizaAi/${['agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio', 'dash'][organizaAiSlideIndex]}.png`, 
+                      alt: 'OrganizaAi Screenshot' 
+                    })}
+                  >
+                    <motion.img 
+                      key={`org2-${organizaAiSlideIndex}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      src={`/OrganizaAi/${['agenda', 'gastos', 'lança', 'manutencao', 'metas', 'perfil', 'relatorio', 'dash'][organizaAiSlideIndex]}.png`}
+                      alt="Slide 2"
+                      className="w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
                 <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
                   <iframe 
                     id="organiza-video"
