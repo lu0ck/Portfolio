@@ -1472,35 +1472,30 @@ export default function App() {
                     })}
                   >
                     <motion.img 
-                      key={`oficina2-${oficinaSlideIndex}`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.5 }}
-                      src={`/oficina_motos/${oficinaSlideIndex === 0 ? 'login' : oficinaSlideIndex === 1 ? 'list' : oficinaSlideIndex === 2 ? 'config' : 'dash'}.png`}
-                      alt="Slide 2"
-                      className="w-full h-full object-cover absolute inset-0"
-                    />
-                  </div>
-                </div>
-                      alt="Slide 2"
-                      className="w-full h-full object-cover absolute inset-0"
-                    />
-                  </div>
-                </div>
-                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
-                  <iframe 
-                    id="oficina-video"
-                    className="w-full h-full rounded-lg"
-                    src=""
-                    title="OFICINA_MOTOS Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+                    key={`oficina2-${oficinaSlideIndex}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    src={`/oficina_motos/${oficinaSlideIndex === 0 ? 'login' : oficinaSlideIndex === 1 ? 'list' : oficinaSlideIndex === 2 ? 'config' : 'dash'}.png`}
+                    alt="Slide 2"
+                    className="w-full h-full object-cover absolute inset-0"
                   />
                 </div>
               </div>
+              <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
+                <iframe 
+                  id="oficina-video"
+                  className="w-full h-full rounded-lg"
+                  src=""
+                  title="OFICINA_MOTOS Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
 
-              <div className="p-6 md:p-10">
-                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.oficinaDetailsTitle}</h2>
+            <div className="p-6 md:p-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.oficinaDetailsTitle}</h2>
                 <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>{t.oficinaDetailsSubtitle}</p>
                 
                 <p className={`text-lg ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'} mb-8 leading-relaxed`}>
