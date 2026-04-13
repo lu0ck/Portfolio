@@ -1782,45 +1782,24 @@ export default function App() {
                 <ChevronDown className="rotate-180" size={24} />
               </button>
 
-              {/* Media Gallery */}
-              <div className="relative">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
-                    onClick={() => setModalImage({ 
-                      src: '/cronus---cyber-productivity/tela.png', 
-                      alt: 'CRONUS Screenshot' 
-                    })}
-                  >
-                    <img 
-                      src="/cronus---cyber-productivity/tela.png"
-                      alt="CRONUS Dashboard"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
-                    onClick={() => setModalImage({ 
-                      src: '/cronus---cyber-productivity/tela.png', 
-                      alt: 'CRONUS Screenshot' 
-                    })}
-                  >
-                    <img 
-                      src="/cronus---cyber-productivity/tela.png"
-                      alt="CRONUS Interface"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
-                  <iframe 
-                    id="cronus-video"
-                    className="w-full h-full rounded-lg"
-                    src=""
-                    title="CRONUS Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
+{/* Media Gallery - Placeholder for images */}
+          <div className="relative">
+            <div className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-zinc-100'} rounded-lg p-8 mx-2 mt-2 text-center`}>
+              <p className={`${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} text-sm`}>
+                📸 Screenshots em breve
+              </p>
+            </div>
+            <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2 mt-2">
+              <iframe
+                id="cronus-video"
+                className="w-full h-full rounded-lg"
+                src=""
+                title="CRONUS Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
 
               <div className="p-6 md:p-10">
                 <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.cronusDetailsTitle}</h2>
