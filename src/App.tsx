@@ -67,6 +67,7 @@ const translations = {
     descAnota: "Application dedicated to creating notes and daily personal organization.",
     descOrganizaAI: "Complete management software for ride-share drivers",
     descOpaEuQuero: "E-commerce platform for local products",
+    descCronus: "Cyber productivity tool",
     repoOwn: "Own Profile Repository",
     loading: "Loading repositories...",
     contactTitle: "Let's Talk?",
@@ -200,6 +201,7 @@ const translations = {
     descAnota: "Aplicação dedicada à criação de anotações e organização pessoal diária.",
     descOrganizaAI: "Software completo de gestão para motoristas de app",
     descOpaEuQuero: "Plataforma de e-commerce para produtos locais",
+    descCronus: "Ferramenta de produtividade cyber",
     repoOwn: "Repositório Próprio",
     loading: "Carregando repositórios...",
     contactTitle: "Vamos Conversar?",
@@ -333,6 +335,7 @@ const translations = {
     descAnota: "Aplicación dedicada a la creación de notas y organización personal diaria.",
     descOrganizaAI: "Software completo de gestión para conductores de apps",
     descOpaEuQuero: "Plataforma de e-commerce para productos locales",
+    descCronus: "Herramienta de productividad cyber",
     repoOwn: "Repositorio Propio",
     loading: "Cargando repositórios...",
     contactTitle: "¿Hablamos?",
@@ -532,7 +535,7 @@ export default function App() {
           bio: user.bio || t.heroDesc
         });
 
-        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina', 'oficina_motos', 'portfolio', 'discord', 'anotaaqui', 'organizaai', 'opaeuquero'];
+        const reposToHide = ['lokya', 'jornal', 'lu0ck', 'crimson', 'oficina', 'oficina_motos', 'portfolio', 'discord', 'anotaaqui', 'organizaai', 'opaeuquero', 'cronus'];
         const filteredRepos = allRepos.filter((repo: Repo) => {
           if (repo.fork) return false;
           const nameLower = repo.name.toLowerCase();
@@ -584,6 +587,17 @@ export default function App() {
         hasDetails: true,
         html_url: 'https://github.com/lu0ck/OrganizaAI',
         imageUrl: '/OrganizaAi/tela.png',
+        fork: false,
+        updated_at: ''
+      },
+      {
+        name: 'CRONUS',
+        description: null,
+        descriptionKey: 'descCronus',
+        languageKey: 'statusFuture',
+        hasDetails: true,
+        html_url: 'https://github.com/lu0ck/cronus---cyber-productivity',
+        imageUrl: '/cronus---cyber-productivity/tela.png',
         fork: false,
         updated_at: ''
       },
@@ -1715,6 +1729,75 @@ export default function App() {
                 <div className="mt-12 flex flex-wrap gap-4">
                   <a 
                     href="https://github.com/lu0ck/OrganizaAI" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-red-500 text-white rounded-lg font-bold transition-all hover:bg-red-600 hover:-translate-y-1 shadow-lg shadow-red-500/20"
+                  >
+                    <Github size={20} /> GitHub
+                  </a>
+                  <button 
+                    onClick={() => setSelectedProject(null)}
+                    className={`inline-flex items-center gap-2 px-8 py-3 bg-transparent border ${theme === 'dark' ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-900' : 'border-zinc-200 text-zinc-600 hover:bg-zinc-50'} rounded-lg font-bold transition-all`}
+                  >
+                    {t.btnClose}
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* CRONUS Modal - Future Project */}
+      <AnimatePresence>
+        {selectedProject === 'CRONUS' && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[2000] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm"
+            onClick={() => setSelectedProject(null)}
+          >
+            <motion.div 
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className={`w-full max-w-5xl max-h-[90vh] overflow-y-auto ${theme === 'dark' ? 'bg-zinc-950 border-zinc-800' : 'bg-white border-zinc-200'} border rounded-2xl shadow-2xl relative`}
+            >
+              <button 
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-4 right-4 p-2 rounded-full hover:bg-red-500/10 text-zinc-400 hover:text-red-500 transition-all z-10"
+              >
+                <ChevronDown className="rotate-180" size={24} />
+              </button>
+
+              <div className="p-6 md:p-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="px-3 py-1 bg-amber-500/20 text-amber-500 text-xs font-bold rounded-full uppercase">
+                    {t.statusFuture}
+                  </span>
+                </div>
+                
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">CRONUS</h2>
+                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>Cyber Productivity Tool</p>
+                
+                <p className={`text-lg ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'} mb-8 leading-relaxed`}>
+                  {t.descCronus}
+                </p>
+
+                <div className={`p-6 ${theme === 'dark' ? 'bg-zinc-900 border-zinc-800' : 'bg-zinc-50 border-zinc-200'} border rounded-xl text-center`}>
+                  <p className={`text-lg ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} mb-4`}>
+                    🚀 {t.statusFuture} - Projeto em desenvolvimento
+                  </p>
+                  <p className={`text-sm ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-500'}`}>
+                    Em breve: mais detalhes, screenshots e funcionalidades.
+                  </p>
+                </div>
+
+                <div className="mt-12 flex flex-wrap gap-4">
+                  <a 
+                    href="https://github.com/lu0ck/cronus---cyber-productivity" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3 bg-red-500 text-white rounded-lg font-bold transition-all hover:bg-red-600 hover:-translate-y-1 shadow-lg shadow-red-500/20"
