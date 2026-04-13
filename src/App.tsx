@@ -67,7 +67,7 @@ const translations = {
     descAnota: "Application dedicated to creating notes and daily personal organization.",
     descOrganizaAI: "Complete management software for ride-share drivers",
     descOpaEuQuero: "E-commerce platform for local products",
-    descCronus: "Cyber productivity tool",
+    descCronus: "Minimalist productivity desktop app with Cyberpunk aesthetics",
     repoOwn: "Own Profile Repository",
     loading: "Loading repositories...",
     contactTitle: "Let's Talk?",
@@ -78,6 +78,25 @@ const translations = {
     eduADS: "Analysis and Systems Development",
     eduFinish: "Finishing in",
     footerText: "Designed and developed. © 2026 lucas.",
+    cronusDetailsTitle: "CRONUS - Cyberpunk Productivity Dashboard",
+    cronusDetailsSubtitle: "React Electron TypeScript Vite Desktop",
+    cronusDetailsIntro: "Minimalist productivity desktop app with Cyberpunk-inspired aesthetics. Centralizes time management, tasks, and habits with focus on privacy and local performance.",
+    cronusDetailsAboutTitle: "📱 About the Project",
+    cronusDetailsAboutDesc: "CRONUS is a minimalist productivity desktop application with a visual aesthetic inspired by the Cyberpunk genre. Designed to centralize time management, tasks, and habits, offering the user a complete control panel for their routine, with focus on privacy and local performance. Built with TypeScript, React and Vite, running as a desktop app through Electron with fully local storage via localStorage.",
+    cronusDetailsFeaturesTitle: "✨ Main Features",
+    cronusDetailsFeatures: [
+      "Performance Dashboard: Visualization of user's 'Sync Level', a custom productivity metric",
+      "Gamified Habit Management: Control of positive/negative habits with virtual financial impact system",
+      "Focus Tools: Integrated Pomodoro timer with daily goals and audio feedback",
+      "Complete Organization: Interactive agenda, stylized calendar, task manager with categories",
+      "Project Notes: Note system for projects and ideas",
+      "Themed UI/UX: High-tech/low-life aesthetic with visual and audio feedback"
+    ],
+    cronusDetailsTechTitle: "🛠️ Technologies",
+    cronusDetailsTechFrontend: "Frontend: React, TypeScript, Vite, CSS3, HTML5",
+    cronusDetailsTechDesktop: "Desktop: Electron, Node.js",
+    cronusDetailsTechData: "Data: Local Storage, Offline Persistence, JSON Export",
+    cronusDetailsPitch: "Developed a minimalist productivity desktop app with Cyberpunk aesthetics. Centralizes habits, tasks and time management with local data storage. Stack: React + TypeScript + Electron + Vite.",
     organizaAiDetailsTitle: "OrganizaAi - Intelligent Management for Ride-Share Drivers",
     organizaAiDetailsSubtitle: "React Electron TypeScript Tailwind Desktop",
     organizaAiDetailsIntro: "Complete management software for ride-share drivers to control earnings, expenses, goals, and vehicle maintenance.",
@@ -201,7 +220,7 @@ const translations = {
     descAnota: "Aplicação dedicada à criação de anotações e organização pessoal diária.",
     descOrganizaAI: "Software completo de gestão para motoristas de app",
     descOpaEuQuero: "Plataforma de e-commerce para produtos locais",
-    descCronus: "Ferramenta de produtividade cyber",
+    descCronus: "Aplicação desktop de produtividade minimalista com estética Cyberpunk",
     repoOwn: "Repositório Próprio",
     loading: "Carregando repositórios...",
     contactTitle: "Vamos Conversar?",
@@ -212,6 +231,25 @@ const translations = {
     eduADS: "Análise e Desenvolvimento de Sistemas",
     eduFinish: "Conclusão em",
     footerText: "Projetado e desenvolvido. © 2026 lucas.",
+    cronusDetailsTitle: "CRONUS - Painel de Produtividade Cyberpunk",
+    cronusDetailsSubtitle: "React Electron TypeScript Vite Desktop",
+    cronusDetailsIntro: "Aplicação desktop de produtividade minimalista com estética inspirada no gênero Cyberpunk. Centraliza gestão de tempo, tarefas e hábitos com foco em privacidade e performance local.",
+    cronusDetailsAboutTitle: "📱 Sobre o Projeto",
+    cronusDetailsAboutDesc: "O Cronus é uma aplicação desktop de produtividade minimalista com uma estética visual inspirada no gênero Cyberpunk. Projetado para centralizar a gestão de tempo, tarefas e hábitos, oferecendo ao usuário um 'painel de controle' completo para sua rotina, com foco em privacidade e performance local. Desenvolvido com TypeScript, React e Vite, estruturado para rodar como aplicação desktop através do Electron, com armazenamento totalmente local via localStorage.",
+    cronusDetailsFeaturesTitle: "✨ Funcionalidades Principais",
+    cronusDetailsFeatures: [
+      "Dashboard de Performance: Visualização do 'Nível de Sincronia', métrica personalizada de produtividade",
+      "Gestão de Hábitos com Gamificação: Controle de hábitos positivos/negativos com sistema de impacto financeiro virtual",
+      "Ferramentas de Foco: Cronômetro Pomodoro integrado com metas diárias e feedback sonoro",
+      "Organização Completa: Agenda interativa, calendário estilizado, gerenciador de tarefas com categorias",
+      "Sistema de Notas: Notas para projetos e ideias",
+      "UI/UX Temática: Estética high-tech/low-life com feedbacks visuais e sonoros"
+    ],
+    cronusDetailsTechTitle: "🛠️ Tecnologias",
+    cronusDetailsTechFrontend: "Frontend: React, TypeScript, Vite, CSS3, HTML5",
+    cronusDetailsTechDesktop: "Desktop: Electron, Node.js",
+    cronusDetailsTechData: "Dados: Local Storage, Persistência Offline, Export JSON",
+    cronusDetailsPitch: "Desenvolvi uma aplicação desktop de produtividade minimalista com estética Cyberpunk. Centraliza hábitos, tarefas e gestão de tempo com armazenamento local. Stack: React + TypeScript + Electron + Vite.",
     organizaAiDetailsTitle: "OrganizaAi - Gestão Inteligente para Motoristas de App",
     organizaAiDetailsSubtitle: "React Electron TypeScript Tailwind Desktop",
     organizaAiDetailsIntro: "Software completo para motoristas de aplicativo gerenciarem ganhos, despesas, metas e manutenção do veículo.",
@@ -335,7 +373,7 @@ const translations = {
     descAnota: "Aplicación dedicada a la creación de notas y organización personal diaria.",
     descOrganizaAI: "Software completo de gestión para conductores de apps",
     descOpaEuQuero: "Plataforma de e-commerce para productos locales",
-    descCronus: "Herramienta de productividad cyber",
+    descCronus: "Aplicación de escritorio de productividad minimalista con estética Cyberpunk",
     repoOwn: "Repositorio Propio",
     loading: "Cargando repositórios...",
     contactTitle: "¿Hablamos?",
@@ -346,6 +384,25 @@ const translations = {
     eduADS: "Análisis y Desarrollo de Sistemas",
     eduFinish: "Finalización en",
     footerText: "Diseñado y desarrollado. © 2026 lucas.",
+    cronusDetailsTitle: "CRONUS - Panel de Productividad Cyberpunk",
+    cronusDetailsSubtitle: "React Electron TypeScript Vite Desktop",
+    cronusDetailsIntro: "Aplicación de escritorio de productividad minimalista con estética inspirada en el género Cyberpunk. Centraliza gestión de tiempo, tareas y hábitos con enfoque en privacidad y rendimiento local.",
+    cronusDetailsAboutTitle: "📱 Sobre el Proyecto",
+    cronusDetailsAboutDesc: "Cronus es una aplicación de escritorio de productividad minimalista con una estética visual inspirada en el género Cyberpunk. Diseñado para centralizar la gestión de tiempo, tareas y hábitos, ofreciendo al usuario un 'panel de control' completo para su rutina, con enfoque en privacidad y rendimiento local. Desarrollado con TypeScript, React y Vite, estructurado para funcionar como aplicación de escritorio a través de Electron, con almacenamiento totalmente local via localStorage.",
+    cronusDetailsFeaturesTitle: "✨ Funcionalidades Principales",
+    cronusDetailsFeatures: [
+      "Dashboard de Performance: Visualización del 'Nivel de Sincronía', métrica personalizada de productividad",
+      "Gestión de Hábitos con Gamificación: Control de hábitos positivos/negativos con sistema de impacto financiero virtual",
+      "Herramientas de Enfoque: Cronómetro Pomodoro integrado con metas diarias y feedback sonoro",
+      "Organización Completa: Agenda interactiva, calendario estilizado, gestor de tareas con categorías",
+      "Sistema de Notas: Notas para proyectos e ideas",
+      "UI/UX Temática: Estética high-tech/low-life con feedbacks visuales y sonoros"
+    ],
+    cronusDetailsTechTitle: "🛠️ Tecnologías",
+    cronusDetailsTechFrontend: "Frontend: React, TypeScript, Vite, CSS3, HTML5",
+    cronusDetailsTechDesktop: "Desktop: Electron, Node.js",
+    cronusDetailsTechData: "Datos: Local Storage, Persistencia Offline, Export JSON",
+    cronusDetailsPitch: "Desarrollé una aplicación de escritorio de productividad minimalista con estética Cyberpunk. Centraliza hábitos, tareas y gestión de tiempo con almacenamiento local. Stack: React + TypeScript + Electron + Vite.",
     organizaAiDetailsTitle: "OrganizaAi - Gestión Inteligente para Conductores de Apps",
     organizaAiDetailsSubtitle: "React Electron TypeScript Tailwind Desktop",
     organizaAiDetailsIntro: "Software completo para conductores de apps gestionar ganancias, gastos, metas y mantenimiento del vehículo.",
@@ -476,6 +533,7 @@ export default function App() {
   const [anotaaquiSlideIndex, setAnotaaquiSlideIndex] = useState(0);
   const [oficinaSlideIndex, setOficinaSlideIndex] = useState(0);
   const [organizaAiSlideIndex, setOrganizaAiSlideIndex] = useState(0);
+  const [cronusSlideIndex, setCronusSlideIndex] = useState(0);
   const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
 
   useEffect(() => {
@@ -509,6 +567,15 @@ export default function App() {
     if (selectedProject === 'OrganizaAI') {
       const interval = setInterval(() => {
         setOrganizaAiSlideIndex(prev => (prev + 1) % 8);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [selectedProject]);
+
+  useEffect(() => {
+    if (selectedProject === 'CRONUS') {
+      const interval = setInterval(() => {
+        setCronusSlideIndex(prev => (prev + 1) % 4);
       }, 3000);
       return () => clearInterval(interval);
     }
@@ -1748,7 +1815,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* CRONUS Modal - Future Project */}
+      {/* CRONUS Modal */}
       <AnimatePresence>
         {selectedProject === 'CRONUS' && (
           <motion.div 
@@ -1772,27 +1839,102 @@ export default function App() {
                 <ChevronDown className="rotate-180" size={24} />
               </button>
 
-              <div className="p-6 md:p-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="px-3 py-1 bg-amber-500/20 text-amber-500 text-xs font-bold rounded-full uppercase">
-                    {t.statusFuture}
-                  </span>
+              {/* Media Gallery */}
+              <div className="relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: '/cronus---cyber-productivity/tela.png', 
+                      alt: 'CRONUS Screenshot' 
+                    })}
+                  >
+                    <img 
+                      src="/cronus---cyber-productivity/tela.png"
+                      alt="CRONUS Dashboard"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 relative cursor-zoom-in"
+                    onClick={() => setModalImage({ 
+                      src: '/cronus---cyber-productivity/tela.png', 
+                      alt: 'CRONUS Screenshot' 
+                    })}
+                  >
+                    <img 
+                      src="/cronus---cyber-productivity/tela.png"
+                      alt="CRONUS Interface"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-                
-                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">CRONUS</h2>
-                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>Cyber Productivity Tool</p>
+                <div className="aspect-video rounded-lg overflow-hidden bg-zinc-900 mx-2 mb-2">
+                  <iframe 
+                    id="cronus-video"
+                    className="w-full h-full rounded-lg"
+                    src=""
+                    title="CRONUS Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              <div className="p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight text-red-500">{t.cronusDetailsTitle}</h2>
+                <p className={`text-sm font-mono ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-400'} mb-6`}>{t.cronusDetailsSubtitle}</p>
                 
                 <p className={`text-lg ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'} mb-8 leading-relaxed`}>
-                  {t.descCronus}
+                  {t.cronusDetailsIntro}
                 </p>
 
-                <div className={`p-6 ${theme === 'dark' ? 'bg-zinc-900 border-zinc-800' : 'bg-zinc-50 border-zinc-200'} border rounded-xl text-center`}>
-                  <p className={`text-lg ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} mb-4`}>
-                    🚀 {t.statusFuture} - Projeto em desenvolvimento
-                  </p>
-                  <p className={`text-sm ${theme === 'dark' ? 'text-zinc-500' : 'text-zinc-500'}`}>
-                    Em breve: mais detalhes, screenshots e funcionalidades.
-                  </p>
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                      {t.cronusDetailsAboutTitle}
+                    </h3>
+                    <p className={`${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} leading-relaxed`}>
+                      {t.cronusDetailsAboutDesc}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      {t.cronusDetailsFeaturesTitle}
+                    </h3>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+                      {t.cronusDetailsFeatures.map((feature: string, idx: number) => (
+                        <li key={idx} className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'} flex items-start gap-2`}>
+                          <span className="text-red-500 mt-1">•</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                        {t.cronusDetailsTechTitle}
+                      </h3>
+                      <div className="space-y-2">
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          {t.cronusDetailsTechFrontend}
+                        </p>
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          {t.cronusDetailsTechDesktop}
+                        </p>
+                        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-zinc-600'}`}>
+                          {t.cronusDetailsTechData}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={`p-4 ${theme === 'dark' ? 'bg-red-500/10 border-red-500/20' : 'bg-red-50 border-red-100'} border rounded-lg`}>
+                    <p className={`text-sm italic ${theme === 'dark' ? 'text-zinc-300' : 'text-zinc-700'}`}>
+                      <span className="font-bold text-red-500">Pitch:</span> "{t.cronusDetailsPitch}"
+                    </p>
+                  </div>
                 </div>
 
                 <div className="mt-12 flex flex-wrap gap-4">
